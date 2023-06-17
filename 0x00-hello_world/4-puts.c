@@ -4,7 +4,7 @@
  * main - Entry point
  (*
  * Description: prints to the out stream
- * Returno: 0 for succes and any other value for failure
+ * Return: 0 for succes and any other value for failure
  */
 int main(void)
 	{
