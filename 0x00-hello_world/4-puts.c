@@ -4,7 +4,9 @@
  * This function prints a message to the stdout using puts
  *
  * main - Entry point
- * Returns 0 for succes and any other value for failure
+ (*
+ *Description: prints to the out stream
+ * Return: 0 for succes and any other value for failure
  */
 int main(void)
 	{
