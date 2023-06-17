@@ -3,7 +3,7 @@
 /*
  * This function prints a message to the stdout using puts
  *
- * main -  Entry point to function
+ * main- Entry point
  * Returns 0 for succes and any other value for failure
  */
 int main(void)
