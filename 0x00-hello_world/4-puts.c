@@ -2,6 +2,9 @@
 
 /*
  * This function prints a message to the stdout using puts
+ *
+ * main -  Entry point to function
+ * Returns 0 for succes and any other value for failure
  */
 int main(void)
 	{
