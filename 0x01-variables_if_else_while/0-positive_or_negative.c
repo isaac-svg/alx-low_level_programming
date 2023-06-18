@@ -4,9 +4,10 @@
 /* more headers goes there */
 
 /* 
- *main - Entry point to function
+ * main - Entry point to function
  * Return: Always 0
- * */
+ * 
+ * /
 int main(void)
 {
 	int n;
@@ -14,15 +15,15 @@ int main(void)
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	if (n < 0)
-	{
+	
 		printf("%d is negative\n", n);
-	}
+	
 	else if (n > 0)
-	{
+	
 		printf("%d is positive\n", n);
-	}
-	else {
+
+	else 
 		printf("%d is zero\n", n);
-	}
+	
 	return (0);
 }
