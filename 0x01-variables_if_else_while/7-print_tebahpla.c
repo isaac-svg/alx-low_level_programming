@@ -12,7 +12,7 @@
 int main(void)
 {
 
-	char str[26] = "zyxwvutsrqponmlkjihgfedcba;
+	char str[26] = "zyxwvutsrqponmlkjihgfedcba";
 	q"nt i;
 
 	for (i = 0; i < 26; i++)
