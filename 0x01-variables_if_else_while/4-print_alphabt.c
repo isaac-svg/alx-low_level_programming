@@ -17,10 +17,12 @@ int main(void)
 
 	for (i = 0; i < 26; i++)
 	{
-		if (str[i] != 'q' || str[i] != 'e')
-		{	
-			putchar(str[i] | ' ');
-		}
+		if (str[i] == 'q' || str[i] == 'e')
+		
+			continue;
+		
+		putchar(str[i] | ' ');
+		
 	}
 	
 	putchar('\n');
