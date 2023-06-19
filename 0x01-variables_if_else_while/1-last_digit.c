@@ -4,7 +4,7 @@
 #include <stdio.h>
 /* more headers goes there */
 
-/*
+/**
  * main - Entry point to function
  *
  * Return: Always 0 if no error
