@@ -13,7 +13,8 @@ int main(void)
 {
 
 	char str[26] ="ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-	for(int i =0; i< 26; i++)
+	iint i;
+	for( i =0; i< 26; i++)
 	{
 		putchar(str[i]|' ');
 	}
