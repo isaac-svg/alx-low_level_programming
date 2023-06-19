@@ -17,8 +17,7 @@ int main(void)
 
 	for (i = 0; i < 26; i++)
 	{
-		if ((str[i] | ' ') == 'q' || (str[i] | ' ') == 'e')
-		
+		if ((str[i] | ' ') == 'q' || (str[i] | ' ') == 'e')	
 			continue;
 		putchar(str[i] | ' ');
 	}
