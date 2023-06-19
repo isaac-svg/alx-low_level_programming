@@ -1,5 +1,6 @@
 #include <stdlib.h>
 #include <time.h>
+#include <string.h>
 /* more headers goes there */
 
 /* 
@@ -13,9 +14,9 @@ int main(void)
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 
-	int inResukt = n;
+	int inResult = n;
 	char buffer[200];
-	sprintf(buffer, "%d", intResulk);
+	sprintf(buffer, "%d", intResult);
 	int length =  strlen(buffer);
 	int index = length -1;
 	char lastChar = buffer[index];
