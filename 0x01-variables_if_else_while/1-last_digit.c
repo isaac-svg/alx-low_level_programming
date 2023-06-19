@@ -14,13 +14,9 @@ int main(void)
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-
-	int intResult = n;
 	char buffer[200];
-	sprintf(buffer, "%d", intResult);
-	int length =  strlen(buffer);
-	int index = length -1;
-	char lastChar = buffer[index];
+	sprintf(buffer, "%d", n);
+	char lastChar = buffer[strlen(buffer) - 1];
 	int lastNum = lastChar - '0';
 	if(lastNum > 5)
 		printf("Last digit of %d is %d and is greater than 5\n", n, lastNum);
