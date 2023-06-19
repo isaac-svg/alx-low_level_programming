@@ -18,5 +18,6 @@ int main(void)
 	{
 		putchar(str[i]|' ');
 	}
+	iputchar("\n");
 	return (0);
 }
