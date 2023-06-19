@@ -21,7 +21,7 @@ int main(void)
 	}
 	for (i = 0; i < 26; i++)
 	{
-		putchar(str[i] & '_ ');
+		putchar(str[i] & '_');
 	}
 	putchar('\n');
 	return (0);
