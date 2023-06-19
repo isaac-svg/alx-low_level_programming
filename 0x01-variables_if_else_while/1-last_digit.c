@@ -5,10 +5,10 @@
 /* more headers goes there */
 
 /*
- *  main - Entry point to function
+ * main - Entry point to function
  *
- *  Return: Always 0 if no error
- *  */
+ * Return: Always 0 if no error
+ */
 int main(void)
 {
 	int n;
