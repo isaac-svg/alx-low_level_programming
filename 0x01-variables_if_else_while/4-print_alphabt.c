@@ -19,7 +19,7 @@ int main(void)
 	{
 		if ((str[i] | ' ') == 'q' || (str[i] | ' ') == 'e')
 		
-			continue;	
+			continue;
 		putchar(str[i] | ' ');
 	}
 	putchar('\n');
