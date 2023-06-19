@@ -14,7 +14,7 @@ int main(void)
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 
-	int inResult = n;
+	int intResult = n;
 	char buffer[200];
 	sprintf(buffer, "%d", intResult);
 	int length =  strlen(buffer);
