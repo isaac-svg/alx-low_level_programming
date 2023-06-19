@@ -12,7 +12,7 @@
 int main(void)
 {
 
-	char str[16] = "01234567890abcdef";
+	char str[16] = "0123456789abcdef";
 	int i;
 
 	for (i = 0; i < 26; i++)
