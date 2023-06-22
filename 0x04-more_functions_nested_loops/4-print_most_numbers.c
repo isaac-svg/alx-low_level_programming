@@ -6,7 +6,7 @@
 void print_most_numbers(void)
 {
 	int i;
-	fot (int i = 48; i < 58; i++)
+	fot (i = 48; i < 58; i++)
 	{
 		if (i != 50)
 		{
@@ -15,6 +15,7 @@ void print_most_numbers(void)
 
 				_putchar(i);
 			}
+		}
 	}
 	_putchar('/n');
 }
