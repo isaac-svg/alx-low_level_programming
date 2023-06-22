@@ -13,10 +13,10 @@ void print_line(int n)
 	}
 	else
 	{
-		while (n)
+		int a;
+		for (a = 0; a < n; a++)
 		{
 			_putchar('_');
-			--n-
 		}
 		_putchar('/n');
 	}
