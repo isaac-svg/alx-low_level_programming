@@ -2,7 +2,7 @@
 /**
  *  _isupper - Checks if input is uppercase or lowercase
  *
- *@c: Argument
+ * @c: Argument
  *  Return: 1 if if input is upercase otherwise 0
  */
 
