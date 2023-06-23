@@ -22,7 +22,7 @@ int main(void)
 		num /= 2;
 	}
 
-	for (a = 3; a <= sqrt(double(num)); a = a + 2)
+	for (a = 3; a <= sqrt(num); a = a + 2)
 	{
 		while (num % a == 0)
 		{
@@ -37,4 +37,4 @@ int main(void)
 	printf("%ld\num", m);
 
 	return (0);
-}
+}}
