@@ -5,7 +5,7 @@
 
 /**
  *
- * main - Entry point to function
+ *main - Entry point to function
   Return: Always 0
  *
  */
