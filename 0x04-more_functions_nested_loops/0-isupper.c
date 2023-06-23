@@ -8,8 +8,7 @@
 
 int _isupper(int c)
 {
-	int castInt = c;
-	if (castInt >= 65 && castInt <= 90)
+	if (c >= 65 && c <= 90)
 	
 		return (1);
 	
