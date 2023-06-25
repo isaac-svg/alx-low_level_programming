@@ -4,7 +4,7 @@
  * main - entyr poin t to program
  * Return sum of the mutiples of 3 and 5 bellow 1024
  */
-int main)void)
+int main(void)
 {
 	int sum;
 	int i;
