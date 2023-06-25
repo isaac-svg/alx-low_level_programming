@@ -3,7 +3,7 @@
 
 /**
  * main - prints _putchar
- * Return: 0 if no error 
+ * Return: 0 if no error
  */
 int main(void)
 {
@@ -11,7 +11,7 @@ int main(void)
 	int i;
 	int n = strlen(str);
 
-	for(i = 0; i < n; i++)
+	for (i = 0; i < n; i++)
 	{
 		_putchar(str[i]);
 	}
