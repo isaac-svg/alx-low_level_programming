@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * jack_bauer - prints the minutes and hours 
+ * jack_bauer - prints the minutes and hours
  * Retun: void
  */
 void jack_bauer(void)
