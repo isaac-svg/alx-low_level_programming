@@ -6,7 +6,7 @@
  * @m: second integer
  * Return: m +n
  */
-int add(int, int)
+int add(int n, int m)
 {
 	return (m + n);
 }
