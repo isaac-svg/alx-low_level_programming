@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * times_tible - prints the times table from 0 to 9
+ * times_table - prints the times table from 0 to 9
  * Return: void
  */
 void times_table(void)
@@ -16,6 +16,9 @@ void times_table(void)
 			if (c == 0)
 			{
 				_putchar('0');
+				_putchar(',');
+				_putchar(' ');
+				_putchar(' ');
 			}
 			else if (c < 10 && b != 0)
 			{
