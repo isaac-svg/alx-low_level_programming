@@ -20,8 +20,8 @@ void rev_string(char *s)
 	while (index < (len / 2))
 	{
 		placeholder = *(s + index);
-		*(s + index) = *(temp + len - index);
-		*(s + len - index) = placeholder;
+		*(s + index) = *(temp + len - index - 1);
+		*(s + len - index - 1) = placeholder;
 		index++;
 	}
 	_putchar('\n');
