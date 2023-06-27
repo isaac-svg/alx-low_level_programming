@@ -16,6 +16,7 @@ void rev_string(char *s)
 		++len;
 	}
 	index  = 0;
+	len -= 1;
 	while (index < (len / 2))
 	{
 		placeholder = *(s + index);
