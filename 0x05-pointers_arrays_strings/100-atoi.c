@@ -26,7 +26,7 @@ int _atoi(char *s)
 			found = 1;
 			while (*(s + diglen + len) >= '0' && *(s + diglen + len) <= '9')
 			{
-				if (!(result * 10))
+				if (!(result && 10))
 						result += (*(s + len + diglen) - '0');
 				else
 					result = (result * 10) + (*(s + diglen + len) - '0');
