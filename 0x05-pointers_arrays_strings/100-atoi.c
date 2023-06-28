@@ -16,8 +16,9 @@ int _atoi(char *s)
 		if (*(s + len) >= '0' && *(s + len) <= '9')
 		{
 			if (*(s + len - 1) == '-')
-				sign = -1;
+			{	sign = -1;
 				ispos = 0;
+			}
 			hasdigit = 1;
 			diglen = 0;
 			while (*(s + diglen) >= '0' && *(s + diglen) <= '9')
@@ -26,14 +27,11 @@ int _atoi(char *s)
 				++diglen;
 			}
 		}
-		if (!hasdigit)
-		{
-			return (0);
-		}
-		else
-		{
-			return (result * sign);
-		}
 		++len;
 	}
+	if (!hasdigit)
+	{
+		return (0);
+	}
+	return (result * sign);
 }
