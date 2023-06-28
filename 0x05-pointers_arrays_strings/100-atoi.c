@@ -21,7 +21,7 @@ int _atoi(char *s)
 			}
 			hasdigit = 1;
 			diglen = 0;
-			while (*(s + diglen) >= '0' && *(s + diglen) <= '9')
+			while (*(s + diglen + len) >= '0' && *(s + diglen + len) <= '9')
 			{
 				result = (result * 10) + (*(s + diglen) - '0');
 				++diglen;
