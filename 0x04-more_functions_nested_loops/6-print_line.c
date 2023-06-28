@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_line prints straight lines.
+ * print_line - prints straight lines.
  * @n: number of lines to be printed.
  * Return: void .
  */
