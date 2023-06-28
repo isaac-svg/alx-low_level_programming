@@ -7,7 +7,7 @@
  */
 int _atoi(char *s)
 {
-	int result, len, diglen, ispos, sign, hasdigit;
+	int result, len, diglen, sign, hasdigit;
 
 	len = 0;
 	sign = 1;
@@ -16,8 +16,8 @@ int _atoi(char *s)
 		if (*(s + len) >= '0' && *(s + len) <= '9')
 		{
 			if (*(s + len - 1) == '-')
-			{	sign = -1;
-				ispos = 0;
+			{	
+				sign = -1;
 			}
 			hasdigit = 1;
 			diglen = 0;
