@@ -27,6 +27,7 @@ int _atoi(char *s)
 				result = (result * 10) + (*(s + diglen + len) - '0');
 				++diglen;
 			}
+			len += diglen;
 		}
 		++len;
 	}
