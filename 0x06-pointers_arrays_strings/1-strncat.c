@@ -1,10 +1,10 @@
 /**
- * _strcat - copys one string onto another
+ * _strncat - copys one string onto another
  * @dest: destination string
  * @src: source string
  * Return: pointerbti dest
  */
-char *_strcat(char *dest, char *src)
+char *_strncat(char *dest, char *src, int n)
 {
 	int dest_len, src_len;
 
@@ -14,13 +14,12 @@ char *_strcat(char *dest, char *src)
 	{
 		if (*(dest + dest_len) == '\0')
 		{
-			while (*(src + src_len) != '\0')
+			for (src_len = 0; src_len < n; src_len++)
 			{
 				*(dest + dest_len + src_len) = *(src + src_len);
 				++src_len;
 				++dest_len;
 			}
-			*(dest + dest_len + 1) = '\0';
 			break;
 		}
 		++dest_len;
