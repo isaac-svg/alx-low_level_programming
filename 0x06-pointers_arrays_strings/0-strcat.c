@@ -1,4 +1,3 @@
-#include "main.h"
 /**
  * _strcat - copys one string onto another
  * @dest: destination string
@@ -26,5 +25,6 @@ char *_strcat(char *dest, char *src)
 		}
 		++dest_len;
 	}
+	return (dest);
 }
 
