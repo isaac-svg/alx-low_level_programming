@@ -4,7 +4,7 @@
  * @str: input string
  * Return: char pointer
  */
-char *string_toupper(char str)
+char *string_toupper(char *str)
 {
 	int len;
 
