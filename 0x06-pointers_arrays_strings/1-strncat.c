@@ -6,22 +6,18 @@
  */
 char *_strncat(char *dest, char *src, int n)
 {
-	int dest_len, src_len;
+	int dlen, slen;
 
-	dest_len = 0;
-	src_len = 0;
-	while (*(dest + dest_len))
+	dlen = 0;
+	while (dest[dlen] != '\0')
+		dlen++;
+	slen = 0;
+	while (slen < n && src[slen]  != '\0')
 	{
-		if (*(dest + dest_len) == '\0')
-		{
-			for (src_len = 0; src_len < n; src_len++)
-			{
-				*(dest + dest_len + src_len) = *(src + src_len);
-				++dest_len;
-			}
-			break;
-		}
-		++dest_len;
+		dest[dlen] = src[slen];
+		slen++;
+		dlen++;
 	}
+
 	return (dest);
 }
