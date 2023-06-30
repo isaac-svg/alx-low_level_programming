@@ -1,4 +1,4 @@
-#include "nain.h"
+#include "main.h"
 /**
  * reverse_array - function to reverse an array
  * @a:array
