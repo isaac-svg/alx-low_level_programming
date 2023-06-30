@@ -6,7 +6,7 @@
  */
 int _strcmp(char *s1, char *s2)
 {
-	int s1_len, s2_len, i, j;
+	int s1_len, s2_len, i;
 
 	s1_len = 0;
 	s2_len = 0;
