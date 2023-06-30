@@ -2,7 +2,8 @@
  * _strncat - copys one string onto another
  * @dest: destination string
  * @src: source string
- * Return: pointerbti dest
+ * @n: lengtj of string to copy
+ * Return: pointer to dest
  */
 char *_strncat(char *dest, char *src, int n)
 {
