@@ -1,6 +1,6 @@
-#include "maim.h"
+#include "main.h"
 /**
- * _strspn - retyrns the number of bytes in the initial 
+ * _strspn - returns the number of bytes in the initial 
  * segment
  * @s: source
  * @accept: compare
