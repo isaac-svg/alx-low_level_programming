@@ -21,7 +21,7 @@ char *_strpbrk(char *s; char *accept)
 		}
 		n++;
 	}
-	return (0);
+	return ('\0');
 }
 
 
