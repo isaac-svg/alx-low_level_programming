@@ -5,7 +5,7 @@
  * @accept: comparer
  * Return: pointer to first occurrence 
  */
-char *_strpbrk(char *s; char *accept)
+char *_strpbrk(char *s, char *accept)
 {
 	int n, acp_len;
 

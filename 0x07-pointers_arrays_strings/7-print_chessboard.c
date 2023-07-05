@@ -4,7 +4,7 @@
  * @a: input array
  * Return: void
  */
-void print_chessboard(char (a*)[8])
+void print_chessboard(char (*a)[8])
 {
 	int m, n;
 
