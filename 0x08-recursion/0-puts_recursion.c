@@ -2,7 +2,7 @@
 
 /**
 * _puts_recursion - prints the characters of a string
-* @s: pointer to input string"
+* @s: pointer to input string
 * Return: void
 */
 void _puts_recursion(char *s)
@@ -14,7 +14,7 @@ void _puts_recursion(char *s)
 	}
 	else
 	{
-		_putchar(0);
+		_putchar('\n');
 	}
 
 }
