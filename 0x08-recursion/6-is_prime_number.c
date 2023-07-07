@@ -16,10 +16,9 @@ int is_prime_number(int n)
 }
 
 /**
- * actual_prime - calculates if a number is prime recursively
+ * get_prime - calculates if a number is prime recursively
  * @n: number to evaluate
  * @i: iterator
- * @description: helper function
  * Return: 1 if n is prime, 0 if not
  */
 int get_prime(int num, int counter)
