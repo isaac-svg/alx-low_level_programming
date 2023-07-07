@@ -5,7 +5,6 @@ int get_prime(int num, int counter);
 /**
  * is_prime_number - checks if a number is prime or not
  * @n: input argument
- @description: helper function
  * Return: 1 if number is prime else 0
  */
 int is_prime_number(int n)
@@ -17,9 +16,9 @@ int is_prime_number(int n)
 
 /**
  * get_prime - calculates if a number is prime recursively
- * @n: number to evaluate
- * @i: iterator
- * Return: 1 if n is prime, 0 if not
+ * @num: input argument
+ * @counter: counter 
+ * Return: 1 if num is prime else 0
  */
 int get_prime(int num, int counter)
 {
