@@ -18,7 +18,6 @@ int _sqrt_recursion(int n)
  * get_sqrt - calculates the natural sqrt of num
  * @num: input argument
  * @c: counter
- * @description: helper function
  * Return: computed sqrt
  */
 int get_sqrt(int num, int c)
