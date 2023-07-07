@@ -26,6 +26,5 @@ int get_sqrt(int num, int c)
 		return (-1);
 	if (c * c == num)
 		return(c);
-	return (get_sqrt(num, c + 1));
+	return (get_sqrt(num, (c + 1)));
 }
-
