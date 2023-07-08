@@ -20,7 +20,7 @@ int verifyNum(char *s)
 			return (0);
 		}
 
-		count++;
+		i++;
 	}
 	return (1);
 }
