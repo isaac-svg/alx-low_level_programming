@@ -4,7 +4,7 @@
 /**
  * main - entry point to program
  * @argc: length of arguments
- * @argc: argument vector
+ * @argv: argument vector
  * Return: 0 if non-error
  */
 
