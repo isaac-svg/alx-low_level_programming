@@ -3,7 +3,6 @@
 /**
  * _atoi - converts a string data type  to an int data type
  * @s: input string
- *
  * Return: the integer derived from the string
  */
 int _atoi(char *s)
@@ -16,7 +15,6 @@ int _atoi(char *s)
 	len = 0;
 	f = 0;
 	digit = 0;
-
 	while (s[len] != '\0')
 		len++;
 
@@ -69,9 +67,3 @@ int main(int argc, char *argv[])
 
 	return (0);
 }
-
-
-
-
-
- 
