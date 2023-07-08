@@ -40,6 +40,7 @@ int main(int argc, char *argv[])
 	int sum = 0;
 
 	count = 1;
+	i = 0;
 	while (count < argc)
 	{
 		if (verifyNum(argv[count]))
