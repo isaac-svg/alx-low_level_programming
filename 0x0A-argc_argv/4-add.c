@@ -15,7 +15,7 @@ int verifyNum(char *s)
 	i = 0;
 	while (i < strlen(s))
 	{
-		if (!isdigit(str[i]))
+		if (!isdigit(s[i]))
 		{
 			return (0);
 		}
@@ -53,7 +53,6 @@ int main(int argc, char *argv[])
 			printf("Error\n");
 			return (1);
 		}
-
 		count++;
 	}
 	printf("%d\n", sum);
