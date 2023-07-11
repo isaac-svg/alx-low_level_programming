@@ -13,7 +13,7 @@ char *_strdup(char *str)
 	int size, j;
 	
 	t =  malloc(sizeof(*str));
-	size = (sizeof(*str) / sizeof(char));
+	size = (sizeof(t) / sizeof(char));
 	for (j = 0; j < size; j++)
 	{
 		t[j] = str[j];
