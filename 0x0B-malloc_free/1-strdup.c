@@ -7,7 +7,7 @@
  * Return: pointer to memory containing copied string
  */
 
-char *strdup(char *str)
+char *_strdup(char *str)
 {
 	char *t;
 	
