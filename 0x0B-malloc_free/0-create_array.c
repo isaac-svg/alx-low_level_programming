@@ -12,7 +12,7 @@
 char *create_array(unsigned int size, char c)
 {
 	char *t;
-	int j;
+	unsigned int j;
 	
 	if (size == 0)
 		return NULL;
