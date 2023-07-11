@@ -5,12 +5,12 @@
  * str_concat - alloates memory and concatenates strings
  * @s1: base string
  * @s2: super string
- * Return pointer to char
+ * Return: pointer to char
  */
 
 char *str_concat(char *s1, char *s2)
 {
-	int i,j, k, l;
+	int i, j, k, l;
 	char *t;
 	
 	if (s1 == NULL)
