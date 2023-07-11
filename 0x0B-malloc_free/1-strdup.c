@@ -10,8 +10,13 @@
 char *_strdup(char *str)
 {
 	char *t;
+	int size, j;
 	
 	t =  malloc(sizeof(*str));
-	*t = *str;
+	size = (t / sizeof(char));
+	for (j = 0; j < size; j++)
+	{
+		t[j] = str[j];
+	}
 	return (t);
 }
