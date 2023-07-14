@@ -40,7 +40,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		s1 = "";
 	s1_length = getstrlen(s1);
 	s2_length =  getstrlen(s2);
-	if (n > s2_length)
+	if (n >= s2_length)
 	{
 		memsize = s1_length + s2_length + 1;
 		n = s2_length;
