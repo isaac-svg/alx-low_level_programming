@@ -1,5 +1,5 @@
 #include "main.h"
-#include <stlib.h>
+#include <stdlib.h>
 
 /**
  * array_range - creates an array of integers
@@ -10,11 +10,12 @@
 
 int *array_range(int min, int max)
 {
-	if (min > max)
-		return (NULL);
 	int *t, diff, i, j;
 
-	diff = max - mini + 1;
+	if (min > max)
+		return (NULL);
+
+	diff = max - min + 1;
 	t = malloc(sizeof(int) * diff);
 	if (t == NULL)
 		return (NULL);
