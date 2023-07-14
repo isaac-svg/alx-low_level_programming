@@ -29,8 +29,10 @@ int getstrlen(char *s)
 
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	int memsize, s1_length, s2_length;
+	unsigned int memsize, s1_length, s2_length;
 	char *t;
+	int j;
+	unsigned int i = 0;
 
 	if (s2 == NULL)
 		s2 = "";
@@ -50,7 +52,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (t == NULL)
 		return (NULL);
 
-	int j;
+	
 
 	j = 0;
 	while (s1[j] != '\0')
@@ -58,7 +60,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		t[j] = s1[j];
 		j++;
 	}
-	int i = 0;
+	
 
 	while (i < n)
 	{
@@ -71,17 +73,3 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 }
 
 
-/**
- * main - check the code
- *
- * Return: Always 0.
- */
-int main(void)
-{
-    char *concat;
-
-    concat = string_nconcat("Best ", "School !!!", 6);
-    printf("%s\n", concat);
-    free(concat);
-    return (0);
-}
