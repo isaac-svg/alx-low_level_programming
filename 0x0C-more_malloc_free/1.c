@@ -11,11 +11,11 @@ int getstrlen(char *s)
 	int j;
 
 	j = 0;
-	if (s[0] == '\0')
+	if (s == "")
 		return (0);
 	while (s[j] != '\0')
 		j++;
-	return (j);
+	return (0);
 }
 
 /**
