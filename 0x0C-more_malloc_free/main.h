@@ -5,6 +5,7 @@
 int _putchar(char b);
 void exit_with_error();
 int is_digit(char *s);
+int _atoi(char *s);
 void *malloc_checked(unsigned int b);
 char *string_nconcat(char *s1, char *s2, unsigned int n);
 int getstrlen(char *s);
