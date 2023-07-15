@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdio.h>
 #include <stdlib.h>
 /**
  * _atoi - functuons same as the built in atoi
@@ -72,7 +71,15 @@ int is_digit(char *s)
 
 void exit_with_error(void)
 {
-	printf("Error\n");
+	int j = 0;
+	char str[] = "Error";
+
+	while (str[j] != '\0')
+	{
+		_putchar(str[j]);
+		j++;
+	}
+	_putchar('\n');
 	exit(98);
 }
 /**
