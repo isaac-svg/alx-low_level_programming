@@ -1,6 +1,6 @@
 #include "main.h"
-#include <stdio.h>
 #include <stdlib.h>
+#include <stdio.h>
 /**
  * _atoi - functuons same as the built in atoi
  * @s: input string
@@ -72,7 +72,15 @@ int is_digit(char *s)
 
 void exit_with_error(void)
 {
-	printf("Error\n");
+	int j = 0;
+	char str[] = "Error";
+
+	while (str[j] != '\0')
+	{
+		putchar(str[j]);
+		j++;
+	}
+	putchar('\n');
 	exit(98);
 }
 /**
@@ -92,6 +100,9 @@ void multiplyArgs(char *arg1, char *arg2)
 		num1 =  _atoi(arg1);
 		num2 = _atoi(arg2);
 	}
+    else{
+        exit_with_error();
+    }
 	result = num1 * num2;
 	dignum = 0;
 	while (result > 0)
@@ -102,7 +113,7 @@ void multiplyArgs(char *arg1, char *arg2)
 		result /= 10;
 	}
 	for (j = dignum - 1; j >= 0; j--)
-		_putchar(digarr[j]);
+		putchar(digarr[j]);
 }
 
 /**
