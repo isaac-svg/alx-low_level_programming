@@ -1,3 +1,4 @@
+#include "dog.h"
 /**
  * init_dog - initialises the members of dog
  * @d: pointer to dog
