@@ -1,6 +1,8 @@
 #ifndef INIT_H
 #define INIT_H
 
+#include "dog.h"
+
 void init_dog(struct dog *d, char *name, float age, char *owner);
 
 #endif
