@@ -29,13 +29,13 @@ int countWords(char *str)
 }
 
 /**
- * splitString - Splits a string into words and creates an array of strings.
+ * strtow - Splits a string into words and creates an array of strings.
  * @str: The input string to split.
  *
  * Return: A pointer to an array of strings (Success),
  *         or NULL if there is an error.
  */
-char **splitString(char *str)
+char **strtow(char *str)
 {
     char **wordMatrix, *temp;
     int i, k = 0, len = 0, wordCount, c = 0, start, end;
