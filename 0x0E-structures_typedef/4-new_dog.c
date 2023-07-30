@@ -78,5 +78,5 @@ dog_t *new_dog(const char *name, float age, const char *owner)
 	_strcpy(dog->name, name);
 	dog->age = age;
 
-	return (dog);
+		return (dog);
 }

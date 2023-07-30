@@ -23,8 +23,8 @@ typedef struct dog dog_t;
 
 void print_dog(struct dog *d);
 void init_dog(struct dog *d, char *name, float age, char *owner);
-dog_t *new_dog(char *name, float age, char *owner);
-char *_strcpy(char *dest, char *src);
-int _strlen(char *src);
+dog_t *new_dog(const char *name, float age, const char *owner);
+char *_strcpy(char *dest, const char *src);
+int _strlen(const char *src);
 
 #endif
