@@ -39,10 +39,10 @@ int change_coin(int total)
 }
 
 /**
- * main - prints the minimum number of coins
+ * main - Entry point to program
  * @argc: argument count
  * @argv: arguments vector
- * Return: 0 if non-error otherwise 1
+ * Return: 0 if no error otherwise 1
  */
 int main(int argc, char *argv[])
 {
