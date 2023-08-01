@@ -15,7 +15,7 @@ size_t print_listint(const listint_t *h)
 	while (h)
 	{
 		num++;
-		res = (h->n) - '0';
+		res = (h->n) + '0';
 		_putchar(res);
 		h = h->next;
 	}
