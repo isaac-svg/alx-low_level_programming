@@ -2,7 +2,7 @@
 #include <stdlib.h>
 /**
  * pop_listint - deletes the head of a linked list
- * @heaad: pointer to the head
+ * @head: pointer to the head
  *
  * Return: head value
  */
