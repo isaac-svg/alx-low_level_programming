@@ -10,14 +10,15 @@
 
 listint_t *reverse_listint(listint_t **head)
 {
-	if (head == NULL || (*head)->next == NULL)
-	{
-		return (*head);
-	}
 
 	listint_t *next = NULL; /* temporarily store the next pointer */
 	listint_t *current =  *head;
 	listint_t *prev = NULL;
+
+	if (head == NULL || (*head)->next == NULL)
+	{
+		return (*head);
+	}
 
 	while (current != NULL)
 	{
