@@ -3,7 +3,7 @@
  * binary_to_uint - converts a binary to an nsigned int
  * @b: string holding the 0's and 1's
  *
- * Retrn: converted number (Success), otherwise 0
+ * Return: converted number (Success), otherwise 0
  */
 
 unsigned int binary_to_uint(const char *b)
