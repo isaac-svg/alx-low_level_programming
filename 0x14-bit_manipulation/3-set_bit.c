@@ -2,12 +2,12 @@
 
 /**
  * set_bit - Sets the value of a bit to 1 at the given index
- * @n: Pointer to the number to modify
+ * @num: Pointer to the number to modify
  * @index: The index of the set bit
  *
  * Return: 1 (Success), or -1 if error i.e index is out of range
  */
-int set_bit(unsigned long int *n, unsigned int index)
+int set_bit(unsigned long int *num, unsigned int index)
 {
 	unsigned long int mask = 1UL;
 
@@ -16,7 +16,7 @@ int set_bit(unsigned long int *n, unsigned int index)
 
 	mask = 1UL << index;
 
-	*n |= mask;
+	*num |= mask;
 
 	return (1);
 }

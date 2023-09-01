@@ -2,15 +2,15 @@
 
 /**
  * print_binary - Prints the binary representation of a number.
- * @n: The number to convert and print in binary.
+ * @a: The number to convert and print in binary representation
  *
  * Return: void
  */
-void print_binary(unsigned long int n)
+void print_binary(unsigned long int a)
 {
 	unsigned long int mask = 1UL << (sizeof(unsigned long int) * 8 - 1);
 
-	while ((n & mask) == 0 && mask != 0)
+	while ((a & mask) == 0 && mask != 0)
 	{
 		mask >>= 1;
 	}

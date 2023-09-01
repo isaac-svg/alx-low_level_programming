@@ -5,7 +5,11 @@
  */
 int get_endianness(void)
 {
-/* union */
+/*
+ * endian union represention and endian
+ * @a: union var
+ * @c: array of length sizeof unsigned int
+ */
 union
 {
 unsigned int a;

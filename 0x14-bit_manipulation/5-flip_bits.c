@@ -3,14 +3,14 @@
 /**
  * flip_bits - Returns the number of bits needed to flip
  * to get from one number to another.
- * @n: The first number.
- * @m: The second number.
+ * @a: The first number.
+ * @b: The second number.
  *
- * Return: number of bits needed to flip
+ * Return: Number of bits needed to flip
  */
-unsigned int flip_bits(unsigned long int n, unsigned long int m)
+unsigned int flip_bits(unsigned long int a, unsigned long int b)
 {
-	unsigned long int result = n ^ m;
+	unsigned long int result = a ^ b;
 	unsigned int count = 0;
 
 	while (result != 0)
