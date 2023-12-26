@@ -1,0 +1,16 @@
+# Define variables
+CC = gcc
+SRC = school.c  main.c
+OBJ = $(SRC:.c=.o)  
+NAME = school 
+
+# Default rule: build the executable
+all: $(NAME)
+
+# Rule to build the executable
+$(NAME): $(OBJ)
+    $(CC) -o $(NAME) $(OBJ)
+
+# Generic rule for compiling .c files to .o files
+%.o: %.c
+    $(CC) -c $< -o $@
