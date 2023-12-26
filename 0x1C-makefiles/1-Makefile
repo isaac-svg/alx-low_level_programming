@@ -7,4 +7,4 @@ all: school
 
 # Rule to build the executable
 school: $(SRC)
-    $(CC) -o school $(SRC)
+	$(CC) -o school $(SRC)
