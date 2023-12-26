@@ -1,0 +1,10 @@
+# Define variables for compiler and source files
+CC = gcc
+SRC = school.c  main.c
+
+# Default rule: build the executable
+all: school
+
+# Rule to build the executable
+school: $(SRC)
+    $(CC) -o school $(SRC)
