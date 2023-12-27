@@ -1,0 +1,30 @@
+# Define variables
+CC = gcc
+SRC = school.c  # Add more .c files as needed
+OBJ = $(SRC:.c=.o)  # Generate object file names dynamically
+NAME = school
+RM = rm -f
+CFLAGS = -Wall -Werror -Wextra -pedantic
+
+# Default rule: build the executable
+all: $(NAME)
+
+# Rule to build the executable
+$(NAME): $(OBJ)
+	$(CC) $(CFLAGS) -o $(NAME) $(OBJ)
+
+# Generic rule for compiling .c files to .o files
+# Ensure selective recompilation by making .o files depend on .c files
+%.o: %.c
+	$(CC) $(CFLAGS) -c $< -o $@
+
+# Cleaning rules
+clean:
+	$(RM) *~ $(NAME)
+
+oclean:
+	$(RM) $(OBJ)
+
+fclean: clean oclean
+
+re: oclean all
