@@ -1,27 +1,22 @@
+# Define variables
+CC = gcc -Wall -Werror -Wextra -pedantic
+SRC = school.c  # Add more .c files as needed
 NAME = school
-SRC = main.c file1.c file2.c
-OBJ = $(SRC:.c=.o)
-CC = gcc
-RM = rm -f
-CFLAGS = -Wall -Werror -Wextra -pedantic
 
+# Default rule: build the executable
 all: $(NAME)
 
-$(NAME): $(OBJ)
-	$(CC) $(OBJ) -o $(NAME)
+# Rule to build the executable
+$(NAME): $(SRC) m.h
+	$(CC) -o $@ $(SRC)
 
-%.o: %.c m.h
-	$(CC) $(CFLAGS) -c $< -o $@
-
+# Cleaning rules
 clean:
 	$(RM) *~ $(NAME)
 
 oclean:
-	$(RM) $(OBJ)
+	$(RM) $(SRC:.c=.o)
 
 fclean: clean oclean
-	$(RM) $(NAME)
 
-re: fclean all
-
-.PHONY: all clean oclean fclean re
+re: oclean all
