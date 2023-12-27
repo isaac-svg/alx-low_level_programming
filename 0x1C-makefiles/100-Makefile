@@ -1,16 +1,12 @@
-# Define variables
 CC = gcc -Wall -Werror -Wextra -pedantic
 SRC = school.c  # Add more .c files as needed
 NAME = school
 
-# Default rule: build the executable
 all: $(NAME)
 
-# Rule to build the executable
 $(NAME): $(SRC) m.h
 	$(CC) -o $@ $(SRC)
 
-# Cleaning rules
 clean:
 	$(RM) *~ $(NAME)
 
