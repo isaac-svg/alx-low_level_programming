@@ -11,9 +11,9 @@ void print_array(int *array, size_t low, size_t high);
 int jump_search(int *array, size_t size, int value);
 size_t min(size_t a, size_t b);
 int interpolation_search(int *array, size_t size, int value);
-
-
-
+void print_array(int *arr, size_t begin, size_t end);
+int bin_search(int *array, size_t left, size_t right, int value);
+int exponential_search(int *array, size_t size, int value);
 
 
 
