@@ -21,13 +21,13 @@ void print_array(int *array, size_t low, size_t high)
 
 	for (j = low; j < high; j++)
 	{
-		if (j == low)
+		if (j == high - 1)
 		{
 			printf(" %d", array[j]);
 		}
 		else
 		{
-			printf(" ,%d",array[j]);
+			printf(" %d,",array[j]);
 		}
 	}
 
